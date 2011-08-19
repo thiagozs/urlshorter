@@ -1,0 +1,8 @@
+%h1="Information About"
+="Original url: "+@uri.original_uri
+%br
+="hash url: "
+%a{:href => "/#{@uri.uri_hash}"} #{@uri.uri_hash}
+="(Share this link)"
+%br
+="Hits Count: "+@uri.count.to_s
